@@ -21,7 +21,7 @@ Send back the list of all the coins sorted in order of their growth in last 24 h
 
 The above has to be done in one single API and not multiple separate API’s. SO go step by step and build features into your API one by one.
 
-## NOTE: When you hit the api for the first time, it will create 100 documents corresponding to the 100 coins in your database. Now next time when you hit your API, it will fail as you have made the symbol and name unique in your schema. Same coins can't be saved again as they will have the same symbol and name. SO you could do one of these 3 things to help yourself in the development phase:
+### NOTE: When you hit the api for the first time, it will create 100 documents corresponding to the 100 coins in your database. Now next time when you hit your API, it will fail as you have made the symbol and name unique in your schema. Same coins can't be saved again as they will have the same symbol and name. SO you could do one of these 3 things to help yourself in the development phase:
 
 - delete the data from DB every time after hitting your API
 - Don't maintain “unique:true” in your schema till you are done with your development and add unique:true only towards the completion of your assignment
